@@ -15,4 +15,4 @@ RUN mkdir /app \
     && wget https://github.com/shadecoredev/Headless-HelloWorld-Godot-app/blob/main/build/helloworld_godot_app_headless.pck -O /tmp/app.pck \
     && chmod +x /app/app.pck
 
-CMD ["godot", "--headless", "--main-pack", "/app/my.pck"]
+CMD ["godot", "--headless", "--main-pack", "/app/app.pck"]
