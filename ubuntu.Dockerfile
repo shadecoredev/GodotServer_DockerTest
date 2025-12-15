@@ -11,9 +11,9 @@ RUN wget https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}
     && mv /usr/local/bin/Godot_v${GODOT_VERSION}_linux.arm64 /usr/local/bin/godot \
     && chmod +x /usr/local/bin/godot
 
-# NOTE: Add any pck files here for your game that you want to include in the container
-# then replace the run CMD below.
-# ADD build/my.pck /app/my.pck
-# CMD ["godot", "--headless", "--main-pack", "/app/my.pck"]
+RUN wget https://github.com/shadecoredev/Headless-HelloWorld-Godot-app/blob/main/build/helloworld_godot_app_headless.pck -O /tmp/app.pck \
+    && mkdir /app
+    && mv /tmp/app.pck /app
+    && chmod +x /app/app.pck
 
-CMD ["godot", "--headless"]
+CMD ["godot", "--headless", "--main-pack", /app/my.pck]
