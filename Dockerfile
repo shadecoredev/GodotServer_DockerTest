@@ -12,7 +12,7 @@ RUN wget https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}
     && chmod +x /usr/local/bin/godot
 
 RUN mkdir /app \
-    && wget https://github.com/shadecoredev/Headless-HelloWorld-Godot-app/blob/main/build/helloworld__godot_app_headless.pck -O /app/app.pck \
+    && wget https://github.com/shadecoredev/Headless-HelloWorld-Godot-app/blob/main/build/app.pck -O /app/app.pck \
     && chmod +x /app
 
 CMD ["godot", "--headless", "--main-pack", "/app/app.pck"]
