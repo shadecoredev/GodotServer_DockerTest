@@ -17,4 +17,4 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image for ubuntu
-      run: docker build . --file ubuntu.Dockerfile --tag briancain/godot-ubuntu:$(date +%s)
+      run: docker build . --file Dockerfile --tag briancain/godot-ubuntu:$(date +%s)
