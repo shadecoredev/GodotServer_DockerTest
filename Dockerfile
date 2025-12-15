@@ -15,4 +15,4 @@ RUN mkdir /app \
     && wget https://github.com/shadecoredev/Headless-HelloWorld-Godot-app/raw/refs/heads/main/build/helloworld_godotapp_linux_headless.x86_64 -O /app/helloworld_godotapp_linux_headless.x86_64 \
     && chmod +x /app/helloworld_godotapp_linux_headless.x86_64
 
-CMD ["/app/helloworld_godotapp_linux_headless.sh"]
+CMD ["./app/helloworld_godotapp_linux_headless.x86_64"]
