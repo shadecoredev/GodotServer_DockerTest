@@ -1,4 +1,4 @@
-GODOT_VERSION?="4.3-stable"
+GODOT_VERSION?="4.5.1-stable"
 
 default: build-all
 
