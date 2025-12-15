@@ -1,6 +1,6 @@
 FROM ubuntu:24.04
 
-ENV GODOT_VERSION="4.3-stable"
+ENV GODOT_VERSION="4.5.1-stable"
 
 RUN apt-get update && apt-get install -y \
     wget unzip mono-complete dotnet-sdk-8.0
