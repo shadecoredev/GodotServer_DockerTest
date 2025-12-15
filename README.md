@@ -23,22 +23,6 @@ the container.
 docker run godot
 ```
 
-You can also run that container in something like Amazons ECS or Kubernetes. But
-that exercise is left to the reader, for now.
-
-## TODO
-
-Support other runtime platforms:
-
-- [ ] Windows
-- [ ] MacOS
-- [ ] Non-Ubuntu Linux
-    + [ ] CentOS
-    + [ ] Your favorite distro here
-
-My preferred deployment operating system is Ubuntu so I plan on mainly
-supporting that distro myself.
-
 ## References
 
 - https://docs.godotengine.org/en/stable/tutorials/export/exporting_for_dedicated_servers.html
